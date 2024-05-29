@@ -1,0 +1,56 @@
+<!--TRABAJO 1 aprobado para Certificación de Diseño Web Responsivo-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <h1 id="title">Survey for Certification</h1>
+  <p id="description">!Gracias por colaborar con esta encuesta!</p>
+  <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+    <label id="name-label" for="name">Ingrese su nombre y apellido:
+      <input id="name" name="name" type="text" placeholder="Insert your name" required> 
+    </label>
+    <label id="email-label" for="email">Ingrese su email:
+      <input id="email" name="email" type="email" placeholder="Your email" required> 
+    </label>
+    <label id="number-label" for="age">Señale su edad (mayor de 12 años):
+       <input id="number" name="age" type="number" min="13" max="120" placeholder="Insert your age" required>
+    </label>
+    <label for="dropdown">Wich one?
+      <select name="dropdown" id="dropdown">
+        <option value="0">(select one)</option>
+        <option value="1">Student</option>
+        <option value="2">Proffesional</option>
+      </select>
+    </label>
+    <legend class="leyenda">Qué sentimiento tiene? (Selección requerida)</legend>
+    <label for="hope">Esperanza 
+      <input id="hope" value="hope" class="inline" type="radio" name="sentimiento" checked>
+    </label>
+    <label for="conform">Conformismo 
+      <input id="conform" value="conform" class="inline" type="radio" name="sentimiento">
+    </label>
+    <legend class="leyenda">Cuál es tu motivación?</legend>
+    <label for="personal"> Crecimiento personal
+      <input id="personal" type="checkbox" class="inline" value="personal" name="motivacion" checked>
+    </label>
+    <label for="laboral"> Crecimiento laboral
+      <input id="laboral" type="checkbox" class="inline" value="laboral" name="motivacion">
+    </label>
+    <label for="economica"> Crecimiento economico
+      <input id="economico" type="checkbox" class="inline" value="economico" name="motivacion">
+    </label>
+    <label for="sentis"  class="leyenda"> Introduce otra sensación social
+      <textarea name="sentis" id="sentis" cols="30" rows="5" placeholder="Describe otros sentimientos sociales."></textarea>
+    </label>
+    <legend class="leyenda">Clic en submit para enviar encuesta</legend>
+    <button id="submit" type="submit">enviar</button>
+  
+  </form>
+
+</body>
+</html>
